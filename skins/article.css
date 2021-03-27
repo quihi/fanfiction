@@ -1,0 +1,13 @@
+/* This is for styling news articles and letters on Archive of Our Own. */
+/* To use it, place your content inside a <div class="article"> tag. */
+
+#workskin .article {
+  background-color: #FFF0D0;
+  color: #222200;
+  box-shadow: 0px 3px 10px #444400;
+  text-align: justify;
+  padding: 10px 25px;
+  width: 70%;
+  margin: auto;
+  display: block;
+}
