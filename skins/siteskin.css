@@ -1,0 +1,27 @@
+/* This is my site skin on Archive of Our Own. */
+
+li.blurb .tags {
+  max-height: 5em;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  font-size: 9pt;
+  opacity: 0.9;
+}
+
+li.blurb .summary {
+  max-height: 10em;
+  overflow-y: auto;
+}
+
+li.blurb .stats {
+  margin-top: 0;
+}
+
+a.tag {
+  border: 0;
+}
+
+/* OPTIONS:
+    What it does: add on to archive skin
+    Parent Skins: For The Trees
+*/
