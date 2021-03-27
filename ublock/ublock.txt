@@ -1,0 +1,7 @@
+! These are my uBlock Origin filters.
+
+! This removes the css from fanfiction.net that blocks copying.
+fanfiction.net###storytextp:style(user-select: auto !important)
+
+! This hides explicit fics on archiveofourown.org from showing up.
+archiveofourown.org##.rating-explicit.rating:xpath(../../../../..)
