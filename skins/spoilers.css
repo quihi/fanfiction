@@ -1,0 +1,14 @@
+/* This is for creating spoiler tags, where the content is visible when you hover over text. */
+/* To use them, place your content inside a <span class="spoiler"> tag. */
+
+#workskin .spoiler {
+  color: black;
+  background: black;
+  border: 1px solid white;
+}
+
+#workskin .spoiler:hover {
+  color: inherit;
+  background: inherit;
+  border: 1px solid transparent;
+}
