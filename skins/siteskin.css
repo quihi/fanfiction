@@ -1,5 +1,10 @@
 /* This is my site skin on Archive of Our Own. */
 
+li.blurb {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
 li.blurb .tags {
   max-height: 5em;
   overflow-y: auto;
@@ -19,6 +24,23 @@ li.blurb .stats {
 
 a.tag {
   border: 0;
+}
+
+/* choose which required tags you want to cover the blurbs for 
+   you must add the li.blurb overflow:hidden CSS section for this to work properly */
+.rating-explicit,
+.warning-yes,
+.category-femslash,
+.complete-no {
+  background-color: black !important;
+  background-image: url("/images/skins/textures/tiles/red-ao3.png") !important;
+  background-repeat: repeat !important;
+  height: 40em !important;
+  width: 1500px !important;
+  top: -50px;
+  left: -50px;
+  position: absolute;
+  z-index: 5;
 }
 
 /* OPTIONS:
