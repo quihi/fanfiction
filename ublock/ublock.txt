@@ -5,3 +5,6 @@ fanfiction.net###storytextp:style(user-select: auto !important)
 
 ! This hides explicit fics on archiveofourown.org from showing up.
 archiveofourown.org##.rating-explicit.rating:xpath(../../../../..)
+
+! This hides blank paragraph tags in AO3, to prevent extra lines showing up between paragraphs. 
+archiveofourown.org##p:has-text(/^\s*$/)
