@@ -1,0 +1,14 @@
+/* These colors are from the links in the "Citrusy" theme by rising. */
+
+details > summary {
+  color: #2f9762;
+  font-weight: bold;
+}
+
+details > summary:hover {
+  color: #cf8902;
+}
+
+details[open] > summary {
+  color: #78426d;
+}
