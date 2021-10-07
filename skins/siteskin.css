@@ -1,7 +1,8 @@
 /* This is my site skin on Archive of Our Own. */
 /* I use this along with siteskin_mobile.css to have separate desktop and mobile settings. */
 
-/* this adds a scroll box for tags and makes the font size smaller */
+/* this adds a scroll box for tags with a small border
+   it also makes the font size smaller and slightly see-through (effectively, a lighter color) */
 li.blurb .tags {
   max-height: 5em;
   overflow-y: auto;
@@ -42,9 +43,10 @@ li.bookmark.blurb.group > div.header.module > p.notice {
   background: #cccccc;
 }
 
-/* this hides a work. */
+/* this hides these works and one author */
 .work-12345678,
-.work-23456789 {
+.work-23456789,
+.user-000000 {
   display: none !important;
 }
 
