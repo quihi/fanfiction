@@ -1,10 +1,6 @@
 /* This is my site skin on Archive of Our Own. */
 
-li.blurb {
-  overflow-y: hidden;
-  overflow-x: hidden;
-}
-
+/* this adds a scroll box for tags and makes the font size smaller */
 li.blurb .tags {
   max-height: 5em;
   overflow-y: auto;
@@ -13,20 +9,53 @@ li.blurb .tags {
   opacity: 0.9;
 }
 
+/* this puts the summary in a scroll box */
 li.blurb .summary {
   max-height: 10em;
   overflow-y: auto;
 }
 
+/* this puts the list of fandoms in a scroll box */
+h5.fandoms.heading {
+  max-height: 2.5em;
+  overflow-y: auto;
+}
+
+/* this removes some of the whitespace between the stats and the summary */
 li.blurb .stats {
   margin-top: 0;
 }
 
+/* this makes tags not underlined */
 a.tag {
   border: 0;
 }
 
-/* choose which required tags you want to cover the blurbs for 
+/* this removes the notice that external bookmarks are external */
+li.bookmark.blurb.group > div.header.module > p.notice {
+  display: none;
+}
+
+/* this makes my own fics highlighted in a darker gray than the default */
+.own {
+  background: #cccccc;
+}
+
+/* this hides a work. */
+.work-12345678,
+.work-23456789 {
+  display: none !important;
+}
+
+/* this does not currently have an effect, unless you are using the section below to block
+    fics with a given required tag */
+li.blurb {
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+/* this allows you to cover all fics with a given required tag and turn them to a black box
+   choose which required tags you want to cover the blurbs for 
    you must add the li.blurb overflow:hidden CSS section for this to work properly */
 .rating-explicit,
 .warning-yes,
@@ -41,6 +70,23 @@ a.tag {
   left: -50px;
   position: absolute;
   z-index: 5;
+}
+
+/* this section makes the comment box float. there is a userscript that does it better,
+   but this works on mobile too. */
+textarea.comment_form.observe_textlength {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 50%;
+  z-index: 10;
+  opacity: 5%;
+}
+textarea.comment_form.observe_textlength:hover {
+  opacity: 20%;
+}
+textarea.comment_form.observe_textlength:focus {
+  opacity: 90%;
 }
 
 /* OPTIONS:
