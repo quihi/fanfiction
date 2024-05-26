@@ -8,6 +8,8 @@
 #         replace the shortcuts on line 38-39 on ones for your fandoms, if you so desire
 #         verify if you want to cut off parts of your tags - see lines 44 and 55
 
+# I highly recommend using the Auto AO3 App instead of this
+
 from bs4 import BeautifulSoup
 import requests
 import time
