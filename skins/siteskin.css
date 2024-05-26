@@ -33,6 +33,13 @@ a.tag {
   border: 0;
 }
 
+/* this puts the list of collections in a scroll box */
+dt.collections,
+dd.collections {
+  max-height: 2.5em;
+  overflow-y: auto;
+}
+
 /* this removes the notice that external bookmarks are external */
 li.bookmark.blurb.group > div.header.module > p.notice {
   display: none;
@@ -41,6 +48,13 @@ li.bookmark.blurb.group > div.header.module > p.notice {
 /* this makes my own fics highlighted in a darker gray than the default */
 .own {
   background: #cccccc;
+}
+
+/* this removes "Guest" from the names in guest comments.
+   it will probably remove "Official" from AO3 news post moderators' comments.
+   it may have unintended side effects. */
+li.comment > h4.byline > span.role {
+  display: none;
 }
 
 /* this hides these works and one author */
